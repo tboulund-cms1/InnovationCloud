@@ -1,0 +1,134 @@
+/*
+Theme Name: InnoCloud Theme
+Author: Thomas Boulund Meng Hansen
+Description: A theme used for the Innovation Cloud conference
+*/
+/*
+Theme Name: Playground theme
+Author: Thomas Boulund Meng Hansen
+Description: A theme used to demonstrate theme development
+*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+  background-size:cover;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 940px; 
+	padding: 0 10px; 
+}
+
+/* Header */
+.header {
+  background-image: url('images/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 800px;
+  text-align: center;
+}
+
+.header .container {
+	position: relative;
+	top: 200px;
+}
+
+.header h1 {
+  color: #fff;
+	font-size: 80px;
+	line-height: 100px; 
+	margin-top: 0;
+	margin-bottom: 80px;
+}
+
+@media (min-width:850px) {
+	.header h1 {
+		font-size: 120px;
+	}
+}
+
+.header p {
+  color: #fff;
+	font-weight: 500;
+	letter-spacing: 8px;
+	margin-bottom: 40px;
+	margin-top: 0;
+}
+
+/* Nav */
+.nav {
+  background: #000;
+  height: 80px;
+  width: 100%;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.nav ul li {
+  color: #fff;
+  display: inline-block;
+  height: 80px;
+  line-height: 80px;
+  list-style: none;
+  padding: 0 10px;
+}
+
+.nav ul li:hover {
+  background: #117bff;
+  cursor: pointer;
+  transition: background .5s;
+}
+
+/* Main */
+.main .container {
+	margin: 80px auto;
+}
+
+.main img {
+  float: left;
+  margin: 50px 80px 50px 0;
+}
+
+
+/* Footer */
+.footer { 
+	font-size: 14px;
+  background-color:black;
+}
+
+.footer p {
+  color: #fff;
+  height: 80px;
+  font-size: 14px;
+  line-height: 80px;
+  margin: 0 10px;
+}
+
+/* Media Queries */
+@media (max-width: 500px) {
+  .header h1 {
+    font-size: 50px;
+    line-height: 64px;
+  }
+
+  .main {
+    padding: 0 30px;
+  }
+
+  .main img {
+    width: 100%;
+  }
+}
