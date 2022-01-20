@@ -10,3 +10,4 @@
         <p><?php bloginfo("description") ?></p>
       </div>
     </div>
+    <?php wp_nav_menu(array("theme_location" => "header-menu-location")) ?>
