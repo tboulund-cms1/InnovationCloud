@@ -136,3 +136,8 @@ body {
 .speakers {
   background-color: lime;
 }
+
+#searchform input {
+  font-size: 1.5em;
+  font-weight: bold;
+}
