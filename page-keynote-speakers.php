@@ -4,7 +4,7 @@
         <div class="speakers">
             <?php while(have_posts()): the_post() ?>
                 <h3><?php the_title() ?></h3>
-                <small>Written by: <?php the_author() ?> at: <?php the_date() ?></small>
+                <?php get_template_part("template-parts/author-box") ?>
                 <p><?php the_content() ?></p>
             <?php endwhile ?>
         </div>
