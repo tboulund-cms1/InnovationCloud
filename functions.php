@@ -9,3 +9,12 @@ function innocloud_register_menu_locations() {
     register_nav_menu("header-menu-location", "Header Menu Location");
 }
 add_action("after_setup_theme", "innocloud_register_menu_locations");
+
+function innocloud_setup_custom_logo() {
+    $config = array(
+        "height" => 200,
+        "width" => 200
+    );
+    add_theme_support("custom-logo", $config);
+}
+add_action("after_setup_theme", "innocloud_setup_custom_logo");
